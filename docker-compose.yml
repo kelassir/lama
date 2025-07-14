@@ -1,0 +1,33 @@
+services:
+  mydb1:
+    image: mysql:8.0
+	container_name: lamadb1
+	environment:
+	  MYSQL_ROOT_PASSWORD: aaa
+	  MYSQL_DATABASE: aaa
+	  MYSQL_USER: aaa
+	  MYSQL_PASSWORD: aaa
+	volumes:
+	  - vol_aaa:/var/lib/mysql
+	ports:
+	  - "33061:3306"
+	networks:
+	  - net_aaa
+  pma1:
+    image: phpmyadmin/phpmyadmin
+	container_name: lamapma1
+	environment:
+	  PMA_HOST: mydb1
+	  PMA_USER: aaa
+	  PMA_PASSWORD: aaa
+	ports:
+	  - "40001:80"
+	networks:
+	  - net_aaa
+	  
+  volumes:
+      vol_aaa:
+	  
+  networks:
+      net_aaa:
+	    dirver: bridge
