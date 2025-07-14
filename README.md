@@ -1,6 +1,6 @@
-Day 1
+# Day 1
 
-Hands-On RECAP
+## Hands-On RECAP
 
 - Download VMWare player and install
 - Download Kali-vmware image and unzip
@@ -33,7 +33,7 @@ password = toor
 # unzip apache-jmeter-5.6.3.zip
 ```
 
-Afternoon session
+## Afternoon session
 ```
 # sh apache-jmeter-5.6.3/bin/jmeter.sh
 # mv
