@@ -1,6 +1,7 @@
 # Day 1
 
-## Hands-On RECAP
+## Hands-On Part 1 
+### Morning Session
 
 - Download VMWare player and install
 - Download Kali-vmware image and unzip
@@ -33,7 +34,7 @@ password = toor
 # unzip apache-jmeter-5.6.3.zip
 ```
 
-## Afternoon session
+### Afternoon Session
 ```
 # sh apache-jmeter-5.6.3/bin/jmeter.sh
 # mv
@@ -150,6 +151,33 @@ _nak up docker container_
 # docker-compose up
 ```
 
+# Day 2
+## Hands-On Part2 
+## Troubleshooting
+```
+# docker ps
+# docker stop namakontainer1 namakontainer2
 
+# docker ps -a
+# docker rm namakontainer1 namakontainer2
 
+# docker images
+# docker image rm namaimage1 namaimage2
 
+# docker network list
+# docker network rm namanetwork1 namanetwork2
+
+# docker system prune
+
+# docker volume list
+# docker volume rm namavolume1 namavolume2
+```
+### Morning Session
+```
+# docker run --rm -p 44444:80 -e PMA_ARBITRARY=1 phpmyadmin/phpmyadmin
+
+# docker pull drupal
+# docker run -p 60000:80 --name drupal2 drupal
+```
+
+### Afternoon Session
