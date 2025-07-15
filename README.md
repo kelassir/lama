@@ -131,11 +131,11 @@ copy script dari github.com/kelassir/lama
 CTRL+b c
 ```
 # mkdir kelassir
+# touch kelassir/docker-compose.yml
 ```
 _masuk ke folder kelassir_
 ```
 # cd kelassir
-# touch docker-compose.yml
 ```
 open folder kelassir
 open docker-compose.yml
