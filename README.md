@@ -141,6 +141,8 @@ paste
 # pwd
 ```
 make sure /root/lama/kelassir
+
+_nak up docker container_
 ```
 # docker-compose up
 ```
