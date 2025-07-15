@@ -181,3 +181,25 @@ _nak up docker container_
 ```
 
 ### Afternoon Session
+ask chatgpt "berikan saya script k6 untuk load testing 1, 10, 100 http://ipaddress:60000/en"
+
+keluar dari tmux lama
+CTRL+b d
+```
+# cd
+```
+buat tmux baru
+```
+# mkdir k6
+# touch k6/11-load.js
+# touch k6/12-load.js
+```
+paste script dari chatgpt ke touched files
+```
+# cd k6
+# tmux new -s k6
+```
+CTRL+b c
+```
+# docker run --rm -i grafana/k6 run - < 11-load.js
+```
